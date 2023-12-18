@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Welcome to Your Movie Recommendation App!</title>
+</head>
+<body>
+    <h1>Welcome to Your Movie Recommendation App!</h1>
+    <!-- Lien vers la page d'inscription -->
+    <p>Don't have an account? <a href="{{ url_for('register') }}">Register</a></p>
+    
+    <!-- Lien vers la page de login -->
+    <p>Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
+    <form action="/recommendations" method="post">
+        <label for="title">Enter a movie title:</label>
+        <input type="text" id="title" name="title" required>
+        <button type="submit">Get Recommendations</button>
+    </form>
+</body>
+</html>
+
+
