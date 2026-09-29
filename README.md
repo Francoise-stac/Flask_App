@@ -1,2 +1,2 @@
 # Flask_App
-Développer, avec l'aide du micro-framework Flask, une application web proposant la possibilité de fournir une recommandation de films à partir d'un titre de film donné par l'utilisateur. 
+Develop, using the Flask micro-framework, a web application that provides movie recommendations based on a movie title entered by the user.
